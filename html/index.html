@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+			<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Hello</a></li>
+							<li><a href="#one">About Me</a></li>
+							<li><a href="#two">About my design</a></li>
+							<li><a href="#work">My works</a></li>
+							<li><a href="#contact">Contact me</a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+			<div class="w3-content w3-display-container">
+			  <img class="mySlides" src="images/fulls/01.jpg" style="width:10%">
+			  <img class="mySlides" src="images/fulls/02.jpg" style="width:10%">
+			  <img class="mySlides" src="images/fulls/03.jpg" style="width:10%">
+			  <img class="mySlides" src="images/fulls/04.jpg" style="width:10%">
+			</div>
+
+			<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			    var i;
+			    var x = document.getElementsByClassName("mySlides");
+			    for (i = 0; i < x.length; i++) {
+			       x[i].style.display = "none";  
+			    }
+			    myIndex++;
+			    if (myIndex > x.length) {myIndex = 1}    
+			    x[myIndex-1].style.display = "block";  
+			    setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+			</script>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container 75%">
+					<p>
+						<img src="images/calligraphie2.png" alt="L'esprit des lettres" style="width:256px;">
+					</p>
+					<p>
+						<img src="images/welcome.jpg" alt="From Paris with love" style="width:720px;height:480px;">
+					</p>
+					<footer>
+						<a href="#one" class="button style2 down">Plus</a>
+					</footer>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				
+						
+					
+				<div class="content box style2">
+					<header>
+						<h2>About me</h2>
+					</header>
+					<p>I traveled a lot in very different countries, for both professional and
+personal purpose.I was born in Ukraine and raised in the family of artists.
+In my 20th I moved to France, Paris.
+I speak English, French, Russian and Ukrainian fluently.
+
+Currently I'm graduating from an Art school MJM Graphic Design
+with a Bachelor degree.
+After working in a design studio with calligraphy and typography for 3 years,
+I decided to learn typography on my own and
+I have been working as a freelance calligrapher since 2012.
+</p>
+
+				</div>
+				<img src="images/calligraphie.png" alt="L'esprit des lettres" style="width:426px;height:240px;position: absolute;left: 200px;top: 200px">
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>About my design</h2>
+					</header>
+					<p>In my designs I like to keep it simple but conceptual. 
+My goals are to focus on typography, to use the right colors,
+content and,above all, to convey the message that I want to express.</p>
+				</div>
+				<img src="images/calligraphie.png" alt="L'esprit des lettres" style="width:426px;height:240px;position: absolute;right: 200px;top: 200px">
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>My works</h2>
+						
+					</header>
+
+					<!-- Lightbox Gallery  -->
+						<div class="container 75% gallery">
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="Illustration" alt=""
+								 /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Illustration" alt="" /></a></div>
+							</div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="Flyer" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="Flyer" alt="" /></a></div>
+							</div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit from-left"><img src="images/thumbs/05.jpg" title="Watch Design" alt="" /></a></div>
+							<div class="6u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="Illustration" alt="" /></a></div>
+							</div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/07.jpg" class="image fit from-left"><img src="images/thumbs/07.jpg" title="Digital Art" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/08.jpg" class="image fit from-right"><img src="images/thumbs/08.jpg" title="Illustration" alt="" /></a></div>
+						<div class="6u 12u(mobile)"><a href="images/fulls/09.jpg" class="image fit from-left"><img src="images/thumbs/09.jpg" title="Flyer" alt=""
+								 /></a></div>
+								 <div class="6u 12u(mobile)"><a href="images/fulls/10.jpg" class="image fit from-right"><img src="images/thumbs/10.jpg" title="Packaging" alt="" /></a></div>
+								 <div class="6u 12u(mobile)"><a href="images/fulls/11.jpg" class="image fit from-left"><img src="images/thumbs/11.jpg" title="Calligraphy" alt=""
+								 /></a></div>
+								 <div class="6u 12u(mobile)"><a href="images/fulls/12.jpg" class="image fit from-right"><img src="images/thumbs/12.jpg" title="Calligraphy" alt="" /></a></div>
+								 <div class="6u 12u(mobile)"><a href="images/fulls/13.jpg" class="image fit from-left"><img src="images/thumbs/13.jpg" title="Calligraphy" alt=""
+								 /></a></div>
+						<div class="6u 12u(mobile)"><a href="images/fulls/14.jpg" class="image fit from-right"><img src="images/thumbs/14.jpg" title="Calligraphy" alt="" /></a></div>
+						
+
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Contactez nous</h2>
+						<p>If you have any questions, feedback, or just want to say hello, you can contact me by <a href="mailto:wowmariia@gmail.com?Subject=Hello%20again" target="_top">email</a> 
+							<p> I also share my latest works and sketches here <a href="https://www.instagram.com/mariiawowdesign/"> mariiawowdesign </a> </p>
+				
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a href="#" class="fa"><span class="fa fa-facebook-square fa-2x"></span></a></li>
+						<li><a href="#" class="fa"><span class="fa fa-linkedin fa-2x"></span></a></li>
+						<li><a href="#" class="fa"><span class="fa fa-pinterest fa-2x"></span></a></li>
+						<li><a href="#" class="fa"><span class="fa fa-instagram fa-2x"></span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy;</li><li>Design: Mariia Moskalenko</li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

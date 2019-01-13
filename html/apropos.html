@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+<header class="w3-display-container w3-content w3-wide w3-right style="max-width:1920px;min-width:300px" id="home">
+  	<a href="https://www.facebook.com/lespritdeslettres/" class="fa"><span class="fa fa-facebook-square fa-2x"></span></a>
+	<a href="https://www.pinterest.fr/lespritdeslettres/?eq=lespritdes%20lett&etslf=9107" class="fa"><span class="fa fa-pinterest fa-2x"></span></a>
+	<a href="https://www.instagram.com/lespritdeslettres/" class="fa"><span class="fa fa-instagram fa-2x"></span></a>
+</header>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide w3-center style="max-width:1920px;min-width:200px" id="home">
+  <img class="w3-image" src="images/calligraphie2.png" alt="Calligraphie" style="width:40%" >
+  <div class="w3-display-bottom w3-center w3-padding-small w3-opacity">
+    <h1 class="w3-medium">Calligraphie personnalisée</h1>
+  </div>
+</header>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-center w3-wide" >
+  <div class="w3-bar w3-white w3-padding w3-card w3-wide" style="letter-spacing:4px;">   
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-center w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Bienvenue</a>
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/me.jpg" class="w3-round w3-image" alt="Mariia Brefort - Directrice Artistique" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-medium">
+      <h2 class="w3-center">À propos</h1><br>
+      <h5 class="w3-center">Mariia Brefort - Directrice Artistique</h5>
+            <p class="w3-large">Après avoir obtenu ses diplomes de Beaux Arts et de Graphisme, Mariia travaille
+              avec de nombreux prestataires dans le domaine de la calligraphie depuis 3 ans. En 2016 elle ouvre son propre
+              <span class="w3-tag w3-light-grey">Atelier</span> pour continuer de travailler en calligraphie et en illustrations
+              personalisées. Son point fort avec les courbes dans les lettres donne a ces pieces le
+              romantisme et chic a l’ancienne.
+              </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">“Ce qui me passionne dans la calligraphie c'est le pouvoir qu’ont les lettres. Vous
+              pouvez, juste avec les lettres recréer un sentiment romantique, chic, ancien,
+              moderne, futuriste... Vous ne parlez pas seulement avec le sens des lettres mais
+              avec leurs corps, avec leurs courbes. Vos phrases sont désormais vivantes, et
+              retranscrivent vos émotions. Vous pouvez tellement expliquer et exprimer avec
+              L'esprit des Lettres”!</p>
+    </div>
+  </div>
+  <hr>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+</footer>
+
+</body>
+</html>

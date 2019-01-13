@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+<header class="w3-display-container w3-content w3-wide w3-right style="max-width:1920px;min-width:300px" id="home">
+  	<a href="https://www.facebook.com/lespritdeslettres/" class="fa"><span class="fa fa-facebook-square fa-2x"></span></a>
+	<a href="https://www.pinterest.fr/lespritdeslettres/?eq=lespritdes%20lett&etslf=9107" class="fa"><span class="fa fa-pinterest fa-2x"></span></a>
+	<a href="https://www.instagram.com/lespritdeslettres/" class="fa"><span class="fa fa-instagram fa-2x"></span></a>
+</header>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide w3-center style="max-width:1920px;min-width:200px" id="home">
+  <img class="w3-image" src="images/calligraphie2.png" alt="Calligraphie" style="width:40%" >
+  <div class="w3-display-bottom w3-center w3-padding-small w3-opacity">
+    <h1 class="w3-medium">Calligraphie personnalisée</h1>
+  </div>
+</header>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-center w3-wide" >
+  <div class="w3-bar w3-white w3-padding w3-card w3-wide" style="letter-spacing:4px;">   
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-center w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Bienvenue</a>
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  <hr> 
+  <!-- Menu Section -->
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/Image 1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/Image 2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/Image 6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <hr>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

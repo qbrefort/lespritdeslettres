@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
+<style>
+body {font-family: "Libre Baskerville"}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+<header class="w3-display-container w3-content w3-wide w3-right style="max-width:1920px;min-width:300px" id="home">
+    <a href="https://www.facebook.com/lespritdeslettres/" class="fa"><span class="fa fa-facebook-square fa-2x"></span></a>
+  <a href="https://www.pinterest.fr/lespritdeslettres/?eq=lespritdes%20lett&etslf=9107" class="fa"><span class="fa fa-pinterest fa-2x"></span></a>
+  <a href="https://www.instagram.com/lespritdeslettres/" class="fa"><span class="fa fa-instagram fa-2x"></span></a>
+</header>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide w3-center style="max-width:1920px;min-width:200px" id="home">
+  <img class="w3-image" src="images/calligraphie2.png" alt="Calligraphie" style="width:40%" >
+  <div class="w3-display-bottom w3-center w3-padding-small w3-opacity">
+    <h1 class="w3-medium">Calligraphie personnalisée</h1>
+  </div>
+</header>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-center w3-wide" >
+  <div class="w3-bar w3-white w3-padding w3-card w3-wide" style="letter-spacing:4px;">   
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-center w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Bienvenue</a>
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  <hr>
+    <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>Vous pouvez me contacter directement par téléphone au <a href="tel:+33661474831">06 61 47 48 31</a> ou par mail <a href="mailto:mariia.brefort@gmail.com" target="_top">mariia.brefort@gmail.com</a>:</p>
+<!--     <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nom" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form> -->
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+</footer>
+
+</body>
+</html>
